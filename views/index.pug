@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  form(action='/', method='POST' class='form-group')
+    label(class='form-label',for='msg') 検索
+    input(type='text',name='message',id='msg' class='form-input')
